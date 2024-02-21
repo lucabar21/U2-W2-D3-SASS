@@ -12,7 +12,7 @@
 @keyframes opacityFadeIn {
   from {
     opacity: 0;
-    translate: 0 -50px;
+    translate: 0 -150px;
   }
   to {
     opacity: 1;
@@ -22,7 +22,7 @@
 .headline .img-hero, .headline .text {
   transition: 0.5s;
   animation-name: opacityFadeIn;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
 }
 
 @keyframes tranY {
