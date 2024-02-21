@@ -1,0 +1,14 @@
+@import "mixins";
+
+@mixin btn-blue {
+  @include btn;
+  background-color: $blue;
+}
+@mixin btn-orange {
+  @include btn;
+  background-color: $orange;
+}
+@mixin btn-green {
+  @include btn;
+  background-color: $green;
+}

@@ -1,0 +1,125 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "animations";
+@import "mixins";
+@import "spacing";
+@import "buttons";
+
+body {
+  background-color: $light-grey;
+}
+// NAVBAR SETTINGS
+.navbar {
+  background-color: $purple;
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 1.5rem;
+}
+
+.navbar ul li {
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  color: $light-grey;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+
+// HEADLINE SETTINGS
+.headline {
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-inline: 1rem;
+  padding: 2rem 1rem;
+  background-color: $purple;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 1.5rem;
+  color: #f4f4f4;
+}
+
+.headline .text {
+  width: 50%;
+  padding-left: 2rem;
+  @extend %fade-in;
+}
+.headline .img-hero {
+  width: 50%;
+  padding-right: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  @extend %fade-in;
+}
+
+.headline .img-hero img {
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+  @include floating;
+}
+.headline h1 {
+  font-size: $font-xl;
+}
+@keyframes tranY {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 -5px;
+  }
+}
+.headline .btns button:nth-child(1) {
+  @include btn-blue;
+  @include floating;
+  &:hover {
+    animation-name: tranY;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+.headline .btns button:nth-child(2) {
+  @include btn-orange;
+  @include floating;
+  &:hover {
+    animation-name: tranY;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+.headline .btns button:nth-child(3) {
+  @include btn-green;
+  @include floating;
+  &:hover {
+    animation-name: tranY;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+// LOW IMG SETTIGNS
+
+.low-img {
+  margin-top: 2rem;
+  display: flex;
+}
+.low-img div {
+  width: 25%;
+  border-radius: 15px;
+  padding-inline: 1rem;
+}
+.low-img img {
+  width: 100%;
+  border-radius: 15px;
+  @include floating;
+}
