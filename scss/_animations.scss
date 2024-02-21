@@ -1,7 +1,7 @@
 @keyframes opacityFadeIn {
   from {
     opacity: 0;
-    translate: 0 -150px;
+    translate: 0 -250px;
   }
   to {
     opacity: 1;
@@ -9,7 +9,6 @@
   }
 }
 %fade-in {
-  transition: 0.5s;
   animation-name: opacityFadeIn;
   animation-duration: 1.5s;
 }
