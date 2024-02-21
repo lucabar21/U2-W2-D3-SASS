@@ -26,7 +26,6 @@ body {
 }
 
 .navbar ul li {
-  font-family: "roboto", sans-serif;
   font-weight: 600;
   color: $light-grey;
   cursor: pointer;
@@ -71,14 +70,7 @@ body {
 .headline h1 {
   font-size: $font-xl;
 }
-@keyframes tranY {
-  from {
-    translate: 0 0;
-  }
-  to {
-    translate: 0 -5px;
-  }
-}
+
 .headline .btns button:nth-child(1) {
   @include btn-blue;
   @include floating;

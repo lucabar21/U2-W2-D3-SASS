@@ -25,6 +25,14 @@
   animation-duration: 4s;
 }
 
+@keyframes tranY {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 -5px;
+  }
+}
 body {
   background-color: #f4f4f4;
 }
@@ -45,7 +53,6 @@ body {
 }
 
 .navbar ul li {
-  font-family: "roboto", sans-serif;
   font-weight: 600;
   color: #f4f4f4;
   cursor: pointer;
@@ -91,14 +98,6 @@ body {
   font-size: 3.5rem;
 }
 
-@keyframes tranY {
-  from {
-    translate: 0 0;
-  }
-  to {
-    translate: 0 -5px;
-  }
-}
 .headline .btns button:nth-child(1) {
   margin-top: 2rem;
   color: #f4f4f4;
