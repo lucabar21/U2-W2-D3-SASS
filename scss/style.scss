@@ -82,29 +82,14 @@ body {
 .headline .btns button:nth-child(1) {
   @include btn-blue;
   @include floating;
-  &:hover {
-    animation-name: tranY;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
 }
 .headline .btns button:nth-child(2) {
   @include btn-orange;
   @include floating;
-  &:hover {
-    animation-name: tranY;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
 }
 .headline .btns button:nth-child(3) {
   @include btn-green;
   @include floating;
-  &:hover {
-    animation-name: tranY;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
 }
 
 // LOW IMG SETTIGNS

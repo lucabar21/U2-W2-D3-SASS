@@ -10,6 +10,9 @@
   cursor: pointer;
   &:hover {
     color: black;
+    animation-name: tranY;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 }
 
